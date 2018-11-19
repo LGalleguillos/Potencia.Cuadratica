@@ -20,13 +20,13 @@ public class Poten {
 		System.out.println("Ingrese un numero entero para saber su potencia");
 		System.out.println("Para cancelar digite un numero negativo");
 		Num=Scan.nextInt();
-		for (int i=0;i<Num;i++){
-			if(Num<0){
+		for (int i=0;i<Num;i++){                 //ciclo de resolucion
+			if(Num<0){                       //si es menor o igual a 0 se termina el ciclo
 				break;
-			}else{
+			}else{                           //si no se procese  
 				res=(int) Math.pow(Num, 2);
 				System.out.println(Num+" al cuadrado es: "+res);
-				Num=Scan.nextInt();
+				Num=Scan.nextInt();      //ingrese nuevo numero
 			}
 			
 		}System.out.println("Operacion cancelada");
